@@ -2,13 +2,13 @@
 
 > **143 projects. 1 winter. Daily builds from 8 Nov 2026 to 31 Mar 2027.**
 
-![Projects](https://img.shields.io/badge/projects-0%20%2F%20143-blue)
+![Projects](https://img.shields.io/badge/projects-1%20%2F%20143-blue)
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ## 📖 About
 
-A personal challenge by **Aditya Chavan** (ExTC student, VIT Wadala) to build small, useful projects through winter and finish with a real portfolio.
+A personal challenge by **Aditya Chavan** (ExTC student, VIT Mumbai) to build small, useful projects through winter and finish with a real portfolio.
 
 The goal is simple: **learn by building**. Ship something small, understand every line, and move on to the next one.
 
@@ -16,7 +16,7 @@ The goal is simple: **learn by building**. Ship something small, understand ever
 
 - Build strong fundamentals in HTML, CSS, JavaScript and React
 - Get comfortable with APIs, Git and GitHub workflows
-- Build electronics tools that connect to my ExTC, GATE EC and VLSI path
+- Build electronics tools that connect to my ExTC, VLSI path
 - Finish winter with a public portfolio of working projects
 
 ## 📏 Rules
@@ -30,7 +30,7 @@ The goal is simple: **learn by building**. Ship something small, understand ever
 
 ## 📊 Progress
 
-**0 / 143 completed**
+**1 / 143 completed**
 
 ## 🗂️ Phases
 
@@ -43,37 +43,6 @@ The goal is simple: **learn by building**. Ship something small, understand ever
 | Phase 5 | 085-112 | React |
 | Phase 6 | 113-132 | Electronics Tools (ExTC) |
 | Phase 7 | 133-143 | Capstone & Showcase |
-
-## 📁 Repository Structure
-
-```
-winter-buildathon-2026-27/
-├── README.md
-├── LICENSE
-├── assets/                 # screenshots (001.png, 002.png, ...)
-└── projects/
-    ├── 001-personal-introduction-webpage/
-    │   ├── index.html
-    │   ├── style.css
-    │   ├── script.js
-    │   └── README.md
-    ├── 002-responsive-profile-card/
-    └── ...
-```
-
-## 🚀 Daily Workflow
-
-1. Build the project inside its folder
-2. Take a screenshot and save it in `assets/`
-3. Write the 3-line project README
-4. Mark the project ✅ in the log below, with the date and live link
-5. Commit and push:
-
-```bash
-git add .
-git commit -m "day-001: personal introduction webpage"
-git push
-```
 
 ## 🌐 Live Demos
 
@@ -94,7 +63,7 @@ _Layouts, responsiveness, UI fundamentals_
 
 | # | Project | Status | Live | Date |
 |---|---|---|---|---|
-| 001 | Personal introduction webpage | ⬜ | - | - |
+| 001 | Personal introduction webpage | ✅ | [Live](https://adiiwithgit.github.io/winter-buildathon-2026-27/projects/001-personal-introduction-webpage/) | 08 Nov 2026 |
 | 002 | Responsive profile card | ⬜ | - | - |
 | 003 | Modern login page UI | ⬜ | - | - |
 | 004 | Registration form | ⬜ | - | - |
@@ -276,7 +245,7 @@ _Bigger tools that tie everything together_
 
 ## 🏁 Milestones
 
-- [ ] Day 1 started
+- [x] Day 1 started
 - [ ] 25 projects
 - [ ] 50 projects
 - [ ] 100 projects (success line)
