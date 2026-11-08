@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOUR NAME · Engineering student</title>
+  <meta name="description"
+    content="Hi, I’m Aditya Chavan, a first-year Electronics engineering student and building something every day this winter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f6f8fb;
+      --ink: #14213d;
+      --muted: #55627d;
+      --line: #cfd8e6;
+      --mark: #ffd84d;
+      --done: #14213d;
+      --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+      --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #0f1626;
+        --ink: #eef2fb;
+        --muted: #9aa8c4;
+        --line: #26324d;
+        --done: #ffd84d;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--text);
+      font-size: 1.125rem;
+      line-height: 1.65;
+      /* faint graph paper, like a notebook margin */
+      background-image:
+        linear-gradient(var(--line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--line) 1px, transparent 1px);
+      background-size: 32px 32px;
+      background-position: -1px -1px;
+    }
+
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 5rem 1.5rem 4rem;
+      background: var(--paper);
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: clamp(2.75rem, 9vw, 5rem);
+      line-height: 1;
+      letter-spacing: -0.03em;
+      margin: 0 0 1.25rem;
+    }
+
+    h2 {
+      font-family: var(--display);
+      font-weight: 500;
+      font-size: 1.5rem;
+      letter-spacing: -0.01em;
+      margin: 3.5rem 0 0.75rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+      max-width: 38rem;
+    }
+
+    .lede {
+      font-size: 1.35rem;
+      color: var(--ink);
+    }
+
+    mark {
+      background: linear-gradient(transparent 55%, var(--mark) 55%);
+      color: inherit;
+      padding: 0 0.1em;
+    }
+
+    a {
+      color: var(--ink);
+      text-underline-offset: 0.2em;
+      text-decoration-thickness: 2px;
+    }
+
+    a:hover {
+      background: var(--mark);
+      color: #14213d;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--mark);
+      outline-offset: 3px;
+    }
+
+    /* The one memorable element: the buildathon tracker */
+    .tracker {
+      margin-top: 1rem;
+    }
+
+    .days {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(1.6rem, 1fr));
+      gap: 6px;
+      max-width: 38rem;
+      margin: 1rem 0 0.75rem;
+    }
+
+    .day {
+      aspect-ratio: 1;
+      border: 2px solid var(--ink);
+      border-radius: 4px;
+    }
+
+    .day.done {
+      background: var(--done);
+    }
+
+    .day.today {
+      background: var(--mark);
+      border-color: var(--ink);
+    }
+
+    .caption {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    ul.facts {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-width: 38rem;
+    }
+
+    ul.facts li {
+      padding: 0.6rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    ul.facts li:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    ul.facts b {
+      font-family: var(--display);
+      font-weight: 500;
+      margin-right: 0.5rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 4rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Hi, I’m YOUR NAME.</h1>
+    <p class="lede">
+      I’m a first-year <mark>Electronics and Communication</mark> student at Vidyalankar Institute of Technology and learning to build
+      software by actually building it.
+    </p>
+    <p>
+      I started college in September 2026. My plan is simple: study the fundamentals properly, and ship something small
+      every day so they stick.
+    </p>
+
+    <h2>Winter Buildathon 2026–27</h2>
+    <div class="tracker">
+      <div class="days" id="days" role="img" aria-label="Buildathon progress"></div>
+      <p class="caption" id="caption"></p>
+    </div>
+
+    <h2>Right now</h2>
+    <ul class="facts">
+      <li><b>Studying</b> Engineering fundamentals</li>
+      <li><b>Building</b> Projects to learn via practical rather than passively watching youtube videos</li>
+      <li><b>Learning</b> Git, GitHub, how websites get hosted, Web Dev, Full Stacks, Linux</li>
+    </ul>
+
+    <h2>Find me</h2>
+    <ul class="links">
+      <li><a href="https://github.com/adiiwithgit">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/aditya-chavan-081114adicn">LinkedIn</a></li>
+      <li><a href=ad.chavan08@gmail.com">Email</a></li>
+    </ul>
+
+    <footer>Built on Day 01 of the buildathon. Plain HTML and CSS, hosted on Render.</footer>
+  </main>
+
+  <script>
+    const TOTAL_DAYS = 30;
+    const CURRENT_DAY = 1;
+
+    const grid = document.getElementById("days");
+    for (let i = 1; i <= TOTAL_DAYS; i++) {
+      const box = document.createElement("div");
+      box.className = "day" + (i < CURRENT_DAY ? " done" : i === CURRENT_DAY ? " today" : "");
+      box.title = "Day " + String(i).padStart(2, "0");
+      grid.appendChild(box);
+    }
+    document.getElementById("caption").textContent =
+      "Day " + String(CURRENT_DAY).padStart(2, "0") + " of " + TOTAL_DAYS + ". One box fills in every day I ship.";
+  </script>
+</body>
+
+</html>
