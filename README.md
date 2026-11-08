@@ -32,8 +32,6 @@ The goal is simple: **learn by building**. Ship something small, understand ever
 
 **0 / 143 completed**
 
-_(Update this number and the badge above as you go.)_
-
 ## 🗂️ Phases
 
 | Phase | Projects | Focus |
