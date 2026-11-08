@@ -63,7 +63,7 @@ _Layouts, responsiveness, UI fundamentals_
 
 | # | Project | Status | Live | Date |
 |---|---|---|---|---|
-| 001 | Personal introduction webpage | ✅ | [Live](https://adiiwithgit.github.io/winter-buildathon-2026-27/projects/001-personal-introduction-webpage/) | 08 Nov 2026 |
+| 001 | Personal introduction webpage | ✅ | [Live](https://winter-buildathon-2026-27.onrender.com) | 08 Nov 2026 |
 | 002 | Responsive profile card | ⬜ | - | - |
 | 003 | Modern login page UI | ⬜ | - | - |
 | 004 | Registration form | ⬜ | - | - |
