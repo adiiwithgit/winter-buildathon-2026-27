@@ -2,7 +2,7 @@
 
 > **143 projects. 1 winter. Daily builds from 8 Nov 2026 to 31 Mar 2027.**
 
-![Projects](https://img.shields.io/badge/projects-2%20%2F%20143-blue)
+![Projects](https://img.shields.io/badge/projects-3%20%2F%20143-blue)
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
@@ -30,7 +30,7 @@ The goal is simple: **learn by building**. Ship something small, understand ever
 
 ## 📊 Progress
 
-**2 / 143 completed**
+**3 / 143 completed**
 
 ## 🗂️ Phases
 
@@ -53,9 +53,9 @@ _Layouts, responsiveness, UI fundamentals_
 
 | # | Project | Status | Live | Date |
 |---|---|---|---|---|
-| 001 | Personal introduction webpage | ✅ | [Live](https://adiiwithgit.github.io/winter-buildathon-2026-27/projects/001-personal-introduction-webpage/) · [Render](https://winter-buildathon-2026-27.onrender.com) | 08 Nov 2026 |
-| 002 | Responsive profile card | ✅ | [Live](https://winter-buildathon-2026-27-day02.onrender.com) | 09 Nov 2026 |
-| 003 | Modern login page UI | ⬜ | - | - |
+| 001 | Personal introduction webpage | ✅ | [Render](https://winter-buildathon-2026-27.onrender.com) | 08 Nov 2026 |
+| 002 | Responsive profile card | ✅ | [Render](https://winter-buildathon-2026-27-day02.onrender.com) | 09 Nov 2026 |
+| 003 | Modern login page UI | ✅ | [Render](https://winter-buildathon-2026-27-day03.onrender.com) | 10 Nov 2026 |
 | 004 | Registration form | ⬜ | - | - |
 | 005 | Digital business card | ⬜ | - | - |
 | 006 | College timetable webpage | ⬜ | - | - |
