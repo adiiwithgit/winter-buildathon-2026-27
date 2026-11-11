@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Winter Buildathon Registration</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Winter Buildathon</h1>
+    <p class="sub">Register your spot</p>
+
+    <form id="regForm" novalidate>
+      <label>Full name
+        <input name="name" required minlength="2" />
+      </label>
+      <label>Email
+        <input type="email" name="email" required />
+      </label>
+      <label>Phone
+        <input name="phone" inputmode="numeric" maxlength="10" required />
+      </label>
+      <label>College
+        <input name="college" required />
+      </label>
+      <label>Year
+        <select name="year" required>
+          <option value="">Select</option>
+          <option value="1">1st</option>
+          <option value="2">2nd</option>
+          <option value="3">3rd</option>
+          <option value="4">4th</option>
+        </select>
+      </label>
+      <label>Team name (optional)
+        <input name="teamName" />
+      </label>
+      <button type="submit" id="btn">Register</button>
+      <p id="msg" role="status"></p>
+    </form>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
